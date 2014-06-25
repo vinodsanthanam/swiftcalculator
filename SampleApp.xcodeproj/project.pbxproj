@@ -13,7 +13,7 @@
 		1741080319591CBB00E14032 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1741080219591CBB00E14032 /* Images.xcassets */; };
 		1741080F19591CBB00E14032 /* SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741080E19591CBB00E14032 /* SampleAppTests.swift */; };
 		1741081A195A728E00E14032 /* OperatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17410819195A728E00E14032 /* OperatorDelegate.swift */; };
-		1741081C195A819C00E14032 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741081B195A819C00E14032 /* Operators.swift */; };
+		1741081E195A966A00E14032 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741081D195A966A00E14032 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		1741080D19591CBB00E14032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1741080E19591CBB00E14032 /* SampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppTests.swift; sourceTree = "<group>"; };
 		17410819195A728E00E14032 /* OperatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorDelegate.swift; sourceTree = "<group>"; };
-		1741081B195A819C00E14032 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ../Operators.swift; sourceTree = "<group>"; };
+		1741081D195A966A00E14032 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		174107F819591CBB00E14032 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				1741081B195A819C00E14032 /* Operators.swift */,
+				1741081D195A966A00E14032 /* Operators.swift */,
 				17410818195A6D8600E14032 /* iPad */,
 				174107FB19591CBB00E14032 /* AppDelegate.swift */,
 				174107FD19591CBB00E14032 /* ViewController.swift */,
@@ -223,7 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				174107FE19591CBB00E14032 /* ViewController.swift in Sources */,
-				1741081C195A819C00E14032 /* Operators.swift in Sources */,
+				1741081E195A966A00E14032 /* Operators.swift in Sources */,
 				174107FC19591CBB00E14032 /* AppDelegate.swift in Sources */,
 				1741081A195A728E00E14032 /* OperatorDelegate.swift in Sources */,
 			);
