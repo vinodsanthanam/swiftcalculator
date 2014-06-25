@@ -23,3 +23,9 @@ class Division : OperatorDelegate{
         return a / b
     }
 }
+
+class None : OperatorDelegate{
+    func operate(a: Double, b: Double) -> Double{
+        return b
+    }
+}

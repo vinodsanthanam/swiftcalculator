@@ -3,9 +3,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var resultLabel : UITextField
-    var lastValue = 0.0;
-    var isAnOperand = false;
-    var operation: OperatorDelegate?
+    var lastValue = 0.0
+    var currentValue = ""
+    var operation: OperatorDelegate? = None()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,38 +17,38 @@ class ViewController: UIViewController {
 
     @IBAction func hadClicked(sender :
         AnyObject) {
-        let button = sender as UIButton
-        let currentValue = button.titleLabel.text.bridgeToObjectiveC().doubleValue
-            if isAnOperand {
-                lastValue = operation!.operate(lastValue , b:currentValue)
-                resultLabel.text = lastValue.bridgeToObjectiveC().stringValue
-                isAnOperand = false
-            }
-            else{
-                lastValue = (lastValue.bridgeToObjectiveC().stringValue + button.titleLabel.text).bridgeToObjectiveC().doubleValue
-                resultLabel.text = lastValue.bridgeToObjectiveC().stringValue
-            }
+        self.currentValue = self.currentValue + (sender as UIButton).titleLabel.text
+        resultLabel.text = self.currentValue
     }
     
     @IBAction func hadAdded(sender : AnyObject) {
-        isAnOperand = true
+        compute()
         operation = Addition()
     }
     
     @IBAction func hadSubtracted(sender : AnyObject) {
-        isAnOperand = true
+        compute()
         operation = Subtraction()
     }
     
     @IBAction func hadMultiplied(sender : AnyObject) {
-        isAnOperand = true
+        compute()
         operation = Multiplication()
     }
     
     @IBAction func hadDivided(sender : AnyObject) {
-        isAnOperand = true
+        compute()
         operation = Division()
     }
     
+    @IBAction func hadEvaluated(sender : AnyObject) {
+        compute()
+    }
+    
+    func compute(){
+        self.lastValue = operation!.operate(self.lastValue , b:self.currentValue.bridgeToObjectiveC().doubleValue)
+        currentValue = ""
+        resultLabel.text = lastValue.bridgeToObjectiveC().stringValue
+    }
 }
 

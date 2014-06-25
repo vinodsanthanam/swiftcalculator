@@ -37,7 +37,7 @@
 		1741080D19591CBB00E14032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1741080E19591CBB00E14032 /* SampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppTests.swift; sourceTree = "<group>"; };
 		17410819195A728E00E14032 /* OperatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorDelegate.swift; sourceTree = "<group>"; };
-		1741081B195A819C00E14032 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		1741081B195A819C00E14032 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ../Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,6 @@
 		174107ED19591CBB00E14032 = {
 			isa = PBXGroup;
 			children = (
-				1741081B195A819C00E14032 /* Operators.swift */,
 				174107F819591CBB00E14032 /* SampleApp */,
 				1741080B19591CBB00E14032 /* SampleAppTests */,
 				174107F719591CBB00E14032 /* Products */,
@@ -80,6 +79,7 @@
 		174107F819591CBB00E14032 /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				1741081B195A819C00E14032 /* Operators.swift */,
 				17410818195A6D8600E14032 /* iPad */,
 				174107FB19591CBB00E14032 /* AppDelegate.swift */,
 				174107FD19591CBB00E14032 /* ViewController.swift */,
